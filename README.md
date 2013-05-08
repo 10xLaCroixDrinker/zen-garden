@@ -1,8 +1,9 @@
 LESS (CSS) Zen Garden
-***
+=============
 
-Design by (@guitrasher)[https://twitter.com/guitrasher]
-Development by (@jimmyking)[https://twitter.com/jimmyking]
+Design by [@guitrasher](https://twitter.com/guitrasher)
+
+Development by [@jimmyking](https://twitter.com/jimmyking)
 
 To build: `lessc all.less all.css`
 
