@@ -5,7 +5,7 @@ Design by [@guitrasher](https://twitter.com/guitrasher)
 
 Development by [@jimmyking](https://twitter.com/jimmyking)
 
-To build: `lessc all.less all.css`
+To build: `lessc styles/all.less styles/all.css`
 
 Tested on:
 * IE 9 & 10
