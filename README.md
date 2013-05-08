@@ -1,8 +1,9 @@
 LESS (CSS) Zen Garden
 =============
 
-Design by [@guitrasher](https://twitter.com/guitrasher)
+A submission for the [CSS Zen Garden's 10th Anniversary](http://mezzoblue.com/archives/2013/05/07/10_years/)
 
+Design by [@guitrasher](https://twitter.com/guitrasher)  
 Development by [@jimmyking](https://twitter.com/jimmyking)
 
 To build: `lessc styles/all.less styles/all.css`
