@@ -1,0 +1,18 @@
+aside.sidebar {
+  height: 0; // temp
+  overflow: hidden; //temp
+  clear: both;
+  float: left;
+  display: block;
+  &:after {
+    content: '';
+    background: url('../images/robot.png') no-repeat;
+    height: 949px;
+    width: 429px;
+    position: fixed;
+    top: 165px;
+    left: 50%;
+    margin-left: -215px;
+    z-index: 1;
+  }
+}
