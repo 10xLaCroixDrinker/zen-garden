@@ -2,10 +2,21 @@ header {
   position: absolute;
   top: -614px;
   width: 100%;
- text-align: center;
+  text-align: center;
   h1 {
     color: @darkBlue;
     margin: 35px 0 0;
+    span {
+      &:before, &:after {
+      content: '';
+      display: inline-block;
+      height: 0;
+      width: 105px;
+      border: 1px solid @red;
+      vertical-align: 0.4em;
+      margin: 0 10px;
+      }
+    }
   }
   h2 {
     text-align: right;
