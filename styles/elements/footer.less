@@ -6,7 +6,8 @@ aside.sidebar {
   display: block;
   &:after {
     content: '';
-    background: url('../images/robot.png') no-repeat;
+    background: url('../images/robot.png') no-repeat; // PNG Fallback
+    background: url('data:image/svg+xml;base64, @{robot}'); // SVG Data URI
     height: 949px;
     width: 429px;
     position: fixed;
