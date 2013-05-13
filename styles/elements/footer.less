@@ -1,9 +1,8 @@
 aside.sidebar {
-  height: 0; // temp
-  overflow: hidden; //temp
   clear: both;
   float: left;
   display: block;
+  width: 100%;
   &:after {
     content: '';
     background: url('../images/robot.png') no-repeat; // PNG Fallback
@@ -15,5 +14,22 @@ aside.sidebar {
     left: 50%;
     margin-left: -215px;
     z-index: 1;
+  }
+  .wrapper {
+    background: @linkColor;
+    border-top: 5px solid @lightBlue;
+    z-index: 2;
+    position: relative;
+    h3 {
+      color: @darkBlue;
+      font-size: 24px;
+    }
+    a {
+      color: @lightBlue;
+      &.designer-name {color: @darkBlue;}
+    }
+    ul {
+      list-style: none;
+    }
   }
 }
