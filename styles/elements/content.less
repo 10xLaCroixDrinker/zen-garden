@@ -5,19 +5,18 @@
     width: 50%;
     max-width: 495px;
     .calcMarginL(50%, -, 520px);  
+    position: relative;
+    z-index: 3;
+    top: 495px;
   }
   .intro {
-    border-top: 5px solid @red;
-    margin-top: 590px;
-    position: relative;
-    z-index: 2;
-    background: fadeout(white, 10%);
+    .gradient(#fff, #f0f7fe);
     float: left;
-    min-height: 385px;
     width: 100%;
-    padding-top: 5px;
+    min-height: 590px;
   }
   .supporting {
+    border-top: 5px solid @red;
     border-bottom: 5px solid @linkColor;
     background-color: fadeout(white, 10%);
     float: left;
@@ -30,7 +29,6 @@
     .explanation {
       max-width: 495px;
       .calcMarginR(50%, -, 520px);
-      margin-top: -385px;
       float: right;
     }
     .participation {
@@ -64,7 +62,7 @@
       border-bottom: 5px solid @blue;
       background-color: @lightBlue;
       width: 100%;
-      margin-bottom: 35px;
+      margin-bottom: 25px;
       h3, p {
         .calcMarginR(50%, -, 520px);
         max-width: 545px;
@@ -97,13 +95,12 @@
       }
     }
   .requirements {
-    float: none;
-    margin: 0 auto;
-    padding-top: 90px;
     width: 100%;
     min-height: 350px;
     max-width: 1040px;
-position: relative;
+    position: relative;
+    left: 50%;
+    margin-left: -520px;
     h3 {
       text-align: center;
     }
@@ -114,8 +111,8 @@ position: relative;
         margin-right: 35px;
       }
       &:nth-child(4) {
-position: absolute;
-right: 0;
+        position: absolute;
+        right: 0;
       }
       .calcWidth(50%, -, 17.5px);
       margin-top: 0;

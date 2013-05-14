@@ -1,11 +1,12 @@
 header {
   position: absolute;
-  top: -614px;
+  top: 0;
   width: 100%;
   text-align: center;
+  z-index: 1;
   h1 {
     color: @darkBlue;
-    margin: 35px 0 0;
+    margin: 15px 0 0;
     span {
       &:before, &:after {
       content: '';
@@ -27,12 +28,13 @@ header {
 }
 
 .summary {
-  position: absolute;
-  top: -390px;
+  position: relative;
+  top: 210px;
   max-width: 1040px;
   left: 50%;
   margin-left: -520px;
   width: 100%;
+  z-index: 1;
   p {
     width: 300px;
     float: right;
@@ -41,13 +43,4 @@ header {
     color: @red;
     margin: 0;
   }
-}
-
-aside.sidebar:before {
-  .gradient(#fff, #f0f7fe);
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 590px;
 }

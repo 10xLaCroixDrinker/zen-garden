@@ -5,6 +5,17 @@ aside.sidebar {
   width: 100%;
   background: @linkColor;
   border-top: 5px solid @lightBlue;
+  &:before {
+    content: '';
+    background: url('../images/starburst.png') no-repeat; // PNG Fallback
+    background: url('data:image/svg+xml;base64, @{starburst}'); // SVG Data URI
+    width: 923px;
+    height: 921px;
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    margin-left: -461.5px;
+  }
   &:after {
     content: '';
     background: url('../images/robot.png') no-repeat; // PNG Fallback
