@@ -29,5 +29,9 @@ abbr[title] {
   border: none;
 }
 
-.preamble abbr:after,
-.explanation abbr[title^="Hyper"]:after {content: ' ('attr(title)')';}
+.preamble, .supporting div, .requirements {
+  abbr:hover:after {
+    content: ' ('attr(title)')';
+    text-indent: 0;
+  }                  
+}
