@@ -24,3 +24,10 @@ a {
   color: @linkColor;
   text-decoration: none;
 }
+
+abbr[title] {
+  border: none;
+}
+
+.preamble abbr:after,
+.explanation abbr[title^="Hyper"]:after {content: ' ('attr(title)')';}
