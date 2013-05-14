@@ -24,3 +24,19 @@
   background: -ms-linear-gradient(top, @startColor 0%,@endColor 100%); // IE10+
   background: linear-gradient(to bottom, @startColor 0%,@endColor 100%); // W3C
 }
+
+.transform(@string) {
+  -webkit-transform: @string;
+  -moz-transform: @string;
+  -ms-transform: @string;
+  -o-transform: @string;
+  transform: @string;
+}
+
+/*.keyframes (@name, @frames) {
+  @-webkit-keyframes @name {@frames}
+  @-moz-keyframes @name {@frames}
+  @-ms-keyframes @name {@frames}
+  @-o-keyframes @name {@frames}
+  @keyframes @name {@frames}
+}*/
