@@ -1,0 +1,18 @@
+@-webkit-keyframes spin {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rise {
+  from {top: 100%;}
+  to {top: 165px;}
+}
+
+aside.sidebar {
+  &:before{
+    -webkit-animation: spin 8s infinite linear;
+  }
+  &:after {
+    -webkit-animation: rise 1.5s ease;
+  }
+}
