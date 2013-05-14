@@ -3,6 +3,8 @@ aside.sidebar {
   float: left;
   display: block;
   width: 100%;
+  background: @linkColor;
+  border-top: 5px solid @lightBlue;
   &:after {
     content: '';
     background: url('../images/robot.png') no-repeat; // PNG Fallback
@@ -20,9 +22,15 @@ aside.sidebar {
     border-top: 5px solid @lightBlue;
     z-index: 2;
     position: relative;
+    width: 100%;
+    max-width: 1040px;
+    top: -5px;
+    margin: 0 auto;
+    padding: 40px 0 50px 0;
     h3 {
       color: @darkBlue;
       font-size: 24px;
+      margin-top: 0;
     }
     a {
       color: @lightBlue;
@@ -30,6 +38,31 @@ aside.sidebar {
     }
     ul {
       list-style: none;
+      padding: 0;
     }
+    .design-selection {
+      width: 50%;
+      float: left;
+      border-right: 2px solid @lightBlue;
+      margin-right: 40px;
+      padding-bottom: 60px;
+    }
+    .zen-resources {margin-top: 40px;}
+  }
+}
+
+.page-wrapper .supporting > footer {
+  width: 100%;
+  background: @darkBlue;
+  position: absolute;
+  bottom: -449px;
+  height: 65px;
+  font-size: 22px;
+  text-align: center;
+  a {
+    color: @lightBlue;
+    vertical-align: -1em;
+    margin-right: 25px;
+    &:last-child {margin-right: 0;}
   }
 }
