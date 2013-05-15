@@ -66,3 +66,56 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  .page-wrapper {
+    .intro {
+      .preamble {
+        margin: 125px 50px 0;
+        .calcWidth(100%, -, 100px);
+        float: none;
+        max-width: none;
+      }
+    }
+    .supporting {
+      .explanation {
+        .calcWidth(100%, -, 100px);
+        float: none;
+        padding: 50% 50px 10px;
+        max-width: none;
+      }
+      .participation {
+        h3, p {
+          float: none;
+          .calcWidth(100%, -, 100px);
+        }
+        &:after {
+          float: none;
+          margin: 50px auto 0;
+          width: 100%;
+        }
+      }
+      .benefits {
+        h3, p {
+          float: none;
+          .calcWidth(100%, -, 100px);
+          margin-left: 50px;
+        }
+        &:after {
+          float: none;
+          margin: 50px auto 0;
+          width: 100%;
+          background-position: center;
+        }
+      }
+      .requirements {
+        p {
+          width: 100% !important;
+          float: none;
+          position: static !important;
+          span {width: 100% !important;}
+        }
+      }
+    }
+  }
+}
