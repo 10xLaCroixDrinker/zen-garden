@@ -1,7 +1,7 @@
 LESS (CSS) Zen Garden
 =============
 
-A submission for the [CSS Zen Garden's 10th Anniversary](http://mezzoblue.com/archives/2013/05/07/10_years/)
+A submission from [meltmedia](http://meltmedia.com) for the [CSS Zen Garden's 10th Anniversary](http://mezzoblue.com/archives/2013/05/07/10_years/)
 
 Design by [@guitrasher](https://twitter.com/guitrasher)  
 Development by [@jimmyking](https://twitter.com/jimmyking)
