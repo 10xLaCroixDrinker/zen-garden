@@ -4,41 +4,41 @@
       height: 700px;
       .summary {
         left: auto;
-        top: auto;
         margin-top: 15px;
         text-align: center;
+        top: auto;
         p {
           float: none;
-          width: 90%;
-          max-width: 300px;
           margin: 0 auto 10px;
+          max-width: 300px;
+          width: 90%;
         }
       }
     }
     .preamble {
-      margin-left: 50px;
       .calcWidth(50%, -, 75px);
+      margin-left: 50px;
       top: 436px;
     }
     .supporting {
       .explanation {
-        margin-right: 50px;
         .calcWidth(50%, -, 75px);
+        margin-right: 50px;
       }
       .participation {
         h3, p {
-          margin-left: 50px;
           .calcWidth(50%, -, 50px);
+          margin-left: 50px;
         }
         &:after {
+          background-position: center;
           -webkit-background-size: contain;
           -moz-background-size: contain;
           background-size: contain;
-          background-position: center;
           float: right;
-          width: 40%;
-          min-width: 0;
           margin: -330px 50px 0 0;
+          min-width: 0;
+          width: 40%;
         }
       }
       .benefits {
@@ -47,36 +47,34 @@
           margin-right: 50px;
         }
         &:after {
+          background-position: center;
           -webkit-background-size: contain;
           -moz-background-size: contain;
           background-size: contain;
-          background-position: center;
-          width: 40%;
           margin-left: 50px;
           min-width: 0;
+          width: 40%;
         }
       }
       .requirements {
         .calcWidth(100%, -, 100px);
-        padding: 0 50px;
         left: auto;
         margin-left: 0;
+        padding: 0 50px;
         p {
           &:nth-child(4) {
-            right: 50px;
             .calcWidth(50%, -, 65px);
+            right: 50px;
           }
-          &:last-child span {
-            width: 60%;
-          }
+          &:last-child span {width: 60%;}
         }
       }
     }
     aside.sidebar {
       &:before {top: 170px;}
       &:after {
-        top: 275px;
         -webkit-animation: rise-short 1.5s ease;
+        top: 275px;
       }
       .wrapper {
         .calcWidth(100%, -, 100px);
@@ -87,31 +85,25 @@
 }
 
 @media (max-width: 1000px) {
-  .page-wrapper {
-    header h1 span {
-      &:before, &:after {width: 100px;}
-    }
+  .page-wrapper header h1 span {
+    &:before, &:after {width: 100px;}
   }
 }
 
 @media (max-width: 1000px) {
-  .page-wrapper {
-    header h1 span {
+  .page-wrapper header h1 span {
       &:before, &:after {content: none;}
-    }
   }
 }
 
 @media (max-width: 700px) {
-  .page-wrapper {
-    .intro {
-      header {
-        h1 {font-size: 60px;}
-        h2 {max-width: 455px;}
-      }
-      .summary {margin-top: 35px;}
-      .preamble {top: 453px;}
+  .page-wrapper .intro {
+    header {
+      h1 {font-size: 60px;}
+      h2 {max-width: 455px;}
     }
+    .summary {margin-top: 35px;}
+    .preamble {top: 453px;}
   }
 }
 
@@ -124,15 +116,15 @@
         background: fadeout(white, 10%);
         border-top: 5px solid @red;
         bottom: 0;
-        max-width: none;
         margin: 0;
+        max-width: none;
         padding: 25px 0;
         position: absolute;
         top: auto;
         width: 100%;
         h3, p {
-          margin: 0 50px;
           .calcWidth(100%, -, 100px);
+          margin: 0 50px;
         }
       }
     }
@@ -141,13 +133,13 @@
       .explanation {
         .calcWidth(100%, -, 100px);
         float: none;
-        padding: 0 50px 10px;
         max-width: none;
+        padding: 0 50px 10px;
       }
       .participation {
         h3, p {
-          float: none;
           .calcWidth(100%, -, 100px);
+          float: none;
         }
         &:after {
           float: none;
@@ -157,22 +149,22 @@
       }
       .benefits {
         h3, p {
-          float: none;
           .calcWidth(100%, -, 100px);
+          float: none;
           margin-left: 50px;
         }
         &:after {
+          background-position: center;
           float: none;
           margin: 50px auto 0;
           width: 80%;
-          background-position: center;
         }
       }
       .requirements {
         p {
-          width: 100% !important;
           float: none;
           position: static !important;
+          width: 100% !important;
           span {width: 100% !important;}
         }
       }
@@ -192,16 +184,11 @@
 }
 
 @media (max-width: 470px) {
-  .page-wrapper {
-    .intro {
-      header {
-        h1 {font-size: 40px;}
-        h2 {
-          font-size: 16px;
-          max-width: 310px;
-        }
-      }
-      //.preamble {top: 388px;}
+  .page-wrapper .intro header {
+    h1 {font-size: 40px;}
+    h2 {
+      font-size: 16px;
+      max-width: 310px;
     }
   }
 }

@@ -1,21 +1,21 @@
 header {
   position: relative;
+  text-align: center;
   top: 0;
   width: 100%;
-  text-align: center;
   z-index: 1;
   h1 {
     color: @darkBlue;
     margin: 15px 0 0;
     span {
       &:before, &:after {
+      border: 1px solid @red;
       content: '';
       display: inline-block;
       height: 0;
-      width: 130px;
-      border: 1px solid @red;
-      vertical-align: 0.4em;
       margin: 0 10px;
+      vertical-align: 0.4em;
+      width: 130px;
       }
     }
   }
@@ -34,11 +34,11 @@ header {
   width: 100%;
   z-index: 2;
   p {
-    width: 300px;
-    float: right;
     clear: right;
-    font-style: italic;
     color: @red;
+    float: right;
+    font-style: italic;
     margin: 0;
+    width: 300px;
   }
 }
