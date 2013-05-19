@@ -1,0 +1,73 @@
+.page-wrapper {
+  .intro {
+    height: 985px;
+    position: relative;
+    .preamble {
+      background: fadeout(white, 10%);
+      border-top: 5px solid @red;
+      bottom: 0;
+      margin: 0;
+      max-width: none;
+      padding: 25px 0;
+      position: absolute;
+      top: auto;
+      width: 100%;
+      h3, p {
+        .calcWidth(100%, -, 100px);
+        margin: 0 50px;
+      }
+    }
+  }
+  .supporting {
+    border-top: none;
+    .explanation {
+      .calcWidth(100%, -, 100px);
+      float: none;
+      max-width: none;
+      padding: 0 50px 10px;
+    }
+    .participation {
+      h3, p {
+        .calcWidth(100%, -, 100px);
+        float: none;
+      }
+      &:after {
+        float: none;
+        margin: 50px auto 0;
+        width: 80%;
+      }
+    }
+    .benefits {
+      h3, p {
+        .calcWidth(100%, -, 100px);
+        float: none;
+        margin-left: 50px;
+      }
+      &:after {
+        background-position: center;
+        float: none;
+        margin: 50px auto 0;
+        width: 80%;
+      }
+    }
+    .requirements {
+      p {
+        float: none;
+        position: static !important;
+        width: 100% !important;
+        span {width: 100% !important;}
+      }
+    }
+    &> footer {bottom: -583px;}
+  }
+  aside.sidebar .wrapper > div {
+    border: none;
+    float: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    h3 {margin: 0;}
+    ul {margin-top: 0;}
+  }
+}

@@ -1,100 +1,12 @@
 @media (max-width: 1040px) {
-  .page-wrapper {
-    .intro {
-      height: 700px;
-      .summary {
-        left: auto;
-        margin-top: 15px;
-        text-align: center;
-        top: auto;
-        p {
-          float: none;
-          margin: 0 auto 10px;
-          max-width: 300px;
-          width: 90%;
-        }
-      }
-    }
-    .preamble {
-      .calcWidth(50%, -, 75px);
-      margin-left: 50px;
-      top: 436px;
-    }
-    .supporting {
-      .explanation {
-        .calcWidth(50%, -, 75px);
-        margin-right: 50px;
-      }
-      .participation {
-        h3, p {
-          .calcWidth(50%, -, 50px);
-          margin-left: 50px;
-        }
-        &:after {
-          background-position: center;
-          -webkit-background-size: contain;
-          -moz-background-size: contain;
-          background-size: contain;
-          float: right;
-          margin: -330px 50px 0 0;
-          min-width: 0;
-          width: 40%;
-        }
-      }
-      .benefits {
-        h3, p {
-          .calcWidth(50%, -, 50px);
-          margin-right: 50px;
-        }
-        &:after {
-          background-position: center;
-          -webkit-background-size: contain;
-          -moz-background-size: contain;
-          background-size: contain;
-          margin-left: 50px;
-          min-width: 0;
-          width: 40%;
-        }
-      }
-      .requirements {
-        .calcWidth(100%, -, 100px);
-        left: auto;
-        margin-left: 0;
-        padding: 0 50px;
-        p {
-          &:nth-child(4) {
-            .calcWidth(50%, -, 65px);
-            right: 50px;
-          }
-          &:last-child span {width: 60%;}
-        }
-      }
-    }
-    aside.sidebar {
-      &:before {top: 170px;}
-      &:after {
-        -webkit-animation: rise-short 1.5s ease;
-        top: 275px;
-      }
-      .wrapper {
-        .calcWidth(100%, -, 100px);
-        padding: 40px 50px 30px;
-      }
-    }
-  }
+  @import 'papa-bear';
 }
 
-@media (max-width: 1000px) {
-  .page-wrapper header h1 span {
-    &:before, &:after {width: 100px;}
-  }
-}
-
-@media (max-width: 1000px) {
-  .page-wrapper header h1 span {
-      &:before, &:after {content: none;}
-  }
-}
+// Resizing header lines
+  @media (max-width: 1000px) {.page-wrapper header h1 span {&:before, &:after {width: 100px;}}}
+  @media (max-width: 940px) {.page-wrapper header h1 span {&:before, &:after {width: 75px;}}}
+  @media (max-width: 890px) {.page-wrapper header h1 span {&:before, &:after {width: 50px;}}}
+  @media (max-width: 890px) {.page-wrapper header h1 span {&:before, &:after {content: none;}}}
 
 @media (max-width: 700px) {
   .page-wrapper .intro {
@@ -108,79 +20,7 @@
 }
 
 @media (max-width: 650px) {
-  .page-wrapper {
-    .intro {
-      height: 985px;
-      position: relative;
-      .preamble {
-        background: fadeout(white, 10%);
-        border-top: 5px solid @red;
-        bottom: 0;
-        margin: 0;
-        max-width: none;
-        padding: 25px 0;
-        position: absolute;
-        top: auto;
-        width: 100%;
-        h3, p {
-          .calcWidth(100%, -, 100px);
-          margin: 0 50px;
-        }
-      }
-    }
-    .supporting {
-      border-top: none;
-      .explanation {
-        .calcWidth(100%, -, 100px);
-        float: none;
-        max-width: none;
-        padding: 0 50px 10px;
-      }
-      .participation {
-        h3, p {
-          .calcWidth(100%, -, 100px);
-          float: none;
-        }
-        &:after {
-          float: none;
-          margin: 50px auto 0;
-          width: 80%;
-        }
-      }
-      .benefits {
-        h3, p {
-          .calcWidth(100%, -, 100px);
-          float: none;
-          margin-left: 50px;
-        }
-        &:after {
-          background-position: center;
-          float: none;
-          margin: 50px auto 0;
-          width: 80%;
-        }
-      }
-      .requirements {
-        p {
-          float: none;
-          position: static !important;
-          width: 100% !important;
-          span {width: 100% !important;}
-        }
-      }
-      &> footer {bottom: -583px;}
-    }
-    aside.sidebar .wrapper > div {
-      border: none;
-      float: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      width: 100%;
-      h3 {margin: 0;}
-      ul {margin-top: 0;}
-    }
-  }
+  @import 'baby-bear';
 }
 
 @media (max-width: 470px) {
