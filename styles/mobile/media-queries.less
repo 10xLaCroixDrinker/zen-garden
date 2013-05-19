@@ -34,10 +34,11 @@
           -webkit-background-size: contain;
           -moz-background-size: contain;
           background-size: contain;
+          background-position: center;
           float: right;
-          width: 50%;
+          width: 40%;
           min-width: 0;
-          margin-right: 50px;
+          margin: -330px 50px 0 0;
         }
       }
       .benefits {
@@ -49,7 +50,9 @@
           -webkit-background-size: contain;
           -moz-background-size: contain;
           background-size: contain;
-          width: 50%;
+          background-position: center;
+          width: 40%;
+          margin-left: 50px;
           min-width: 0;
         }
       }
@@ -107,6 +110,7 @@
         h2 {max-width: 455px;}
       }
       .summary {margin-top: 35px;}
+      .preamble {top: 453px;}
     }
   }
 }
@@ -114,18 +118,30 @@
 @media (max-width: 650px) {
   .page-wrapper {
     .intro {
+      height: 985px;
+      position: relative;
       .preamble {
-        margin: 125px 50px 0;
-        .calcWidth(100%, -, 100px);
-        float: none;
+        background: fadeout(white, 10%);
+        border-top: 5px solid @red;
+        bottom: 0;
         max-width: none;
+        margin: 0;
+        padding: 25px 0;
+        position: absolute;
+        top: auto;
+        width: 100%;
+        h3, p {
+          margin: 0 50px;
+          .calcWidth(100%, -, 100px);
+        }
       }
     }
     .supporting {
+      border-top: none;
       .explanation {
         .calcWidth(100%, -, 100px);
         float: none;
-        padding: 50% 50px 10px;
+        padding: 0 50px 10px;
         max-width: none;
       }
       .participation {
@@ -136,7 +152,7 @@
         &:after {
           float: none;
           margin: 50px auto 0;
-          width: 100%;
+          width: 80%;
         }
       }
       .benefits {
@@ -148,7 +164,7 @@
         &:after {
           float: none;
           margin: 50px auto 0;
-          width: 100%;
+          width: 80%;
           background-position: center;
         }
       }
@@ -160,18 +176,32 @@
           span {width: 100% !important;}
         }
       }
+      &> footer {bottom: -583px;}
+    }
+    aside.sidebar .wrapper > div {
+      border: none;
+      float: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      width: 100%;
+      h3 {margin: 0;}
+      ul {margin-top: 0;}
     }
   }
 }
 
 @media (max-width: 470px) {
   .page-wrapper {
-    .intro header {
-      h1 {font-size: 40px;}
-      h2 {
-        font-size: 16px;
-        max-width: 310px;
+    .intro {
+      header {
+        h1 {font-size: 40px;}
+        h2 {
+          font-size: 16px;
+          max-width: 310px;
+        }
       }
+      //.preamble {top: 388px;}
     }
   }
 }
