@@ -7,8 +7,8 @@ aside.sidebar {
   border-top: 5px solid @lightBlue;
   &:before {
     content: '';
-    background: url('../images/starburst.png') no-repeat; // PNG Fallback
-    background: url('data:image/svg+xml;base64, @{starburst}'); // SVG Data URI
+    background: url('../images/starburst.png') center top no-repeat; // PNG Fallback
+    background: url('data:image/svg+xml;base64, @{starburst}') center top no-repeat; // SVG Data URI
     width: 923px;
     height: 921px;
     position: fixed;
@@ -18,8 +18,8 @@ aside.sidebar {
   }
   &:after {
     content: '';
-    background: url('../images/robot.png') no-repeat; // PNG Fallback
-    background: url('data:image/svg+xml;base64, @{robot}') no-repeat; // SVG Data URI
+    background: url('../images/robot.png') center top no-repeat; // PNG Fallback
+    background: url('data:image/svg+xml;base64, @{robot}') center top no-repeat; // SVG Data URI
     height: 949px;
     width: 429px;
     position: fixed;
