@@ -85,8 +85,8 @@
       }
       &:after {
         .calcMarginL(50%, -, 520px);
-        background: url(../images/benefits.png) 150px center no-repeat;
-        background: url('data:image/svg+xml;base64, @{benefits}') 150px no-repeat;
+        background: url(../images/benefits.png) 150px center no-repeat; // PNG Fallback
+        background: url('data:image/svg+xml;base64, @{benefits}') 150px center no-repeat;  // SVG Data URI
         content: '';
         display: block;
         float: left;
@@ -97,42 +97,42 @@
         width: 100%;
       }
     }
-  .requirements {
-    left: 50%;
-    margin-left: -520px;
-    max-width: 1040px;
-    min-height: 350px;
-    position: relative;
-    width: 100%;
-    h3 {
-      text-align: center;
-    }
-    p {
-      float: left;
-      &:nth-child(-n+3) {
-        clear: left;
-        margin-right: 35px;
-      }
-      &:nth-child(4) {
-        position: absolute;
-        right: 0;
-      }
-      .calcWidth(50%, -, 17.5px);
-      margin-top: 0;
-      &:last-child {
-        font-size: 24px;
-        margin-top: 40px;
-        padding-bottom: 20px;
+    .requirements {
+      left: 50%;
+      margin-left: -520px;
+      max-width: 1040px;
+      min-height: 350px;
+      position: relative;
+      width: 100%;
+      h3 {
         text-align: center;
-        width: 100%;
-        span {
-          display: block;
-          line-height: 1.25em;
-          margin: 0 auto;
-          width: 55%;
+      }
+      p {
+        float: left;
+        &:nth-child(-n+3) { // Selects first 3 elements
+          clear: left;
+          margin-right: 35px;
+        }
+        &:nth-child(4) { // Selects 4th element
+          position: absolute;
+          right: 0;
+        }
+        .calcWidth(50%, -, 17.5px);
+        margin-top: 0;
+        &:last-child {
+          font-size: 24px;
+          margin-top: 40px;
+          padding-bottom: 20px;
+          text-align: center;
+          width: 100%;
+          span {
+            display: block;
+            line-height: 1.25em;
+            margin: 0 auto;
+            width: 55%;
+          }
         }
       }
     }
-  }
   }
 }
