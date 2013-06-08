@@ -13,23 +13,24 @@
       top: auto;
       width: 100%;
       h3, p {
-        .calcWidth(100%, -, 100px);
-        margin: 0 50px;
+width: 85%;
+        margin: 0 auto;
       }
     }
   }
   .supporting {
     border-top: none;
     .explanation {
-      .calcWidth(100%, -, 100px);
+width: 85%;
       float: none;
       max-width: none;
-      padding: 0 50px 10px;
+      padding: 0 7.5% 10px;
     }
     .participation {
       h3, p {
-        .calcWidth(100%, -, 100px);
+width: 85%;
         float: none;
+margin: 0 auto;
       }
       &:after {
         float: none;
@@ -39,9 +40,9 @@
     }
     .benefits {
       h3, p {
-        .calcWidth(100%, -, 100px);
+width: 85%;
         float: none;
-        margin-left: 50px;
+        margin: auto;
       }
       &:after {
         background-position: center;
@@ -51,6 +52,8 @@
       }
     }
     .requirements {
+padding: 0 7.5%;
+width: 85%;
       p {
         float: none;
         position: static !important;
@@ -58,16 +61,30 @@
         span {width: 100% !important;}
       }
     }
-    &> footer {bottom: -583px;}
+    &> footer {
+      bottom: -583px;
+      font-size: 18px;
+    }
   }
-  aside.sidebar .wrapper > div {
-    border: none;
-    float: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 100%;
-    h3 {margin: 0;}
-    ul {margin-top: 0;}
+  aside.sidebar {
+    .wrapper {
+padding: 40px 0 30px;
+width: 100%;
+      &> div {
+        border: none;
+        float: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        h3 {margin: 0;}
+        ul {margin-top: 0;}
+      }
+    }
+    &:after {
+      .background-size(contain);
+      margin-left: -45%;
+      width: 90%;
+    }
   }
 }

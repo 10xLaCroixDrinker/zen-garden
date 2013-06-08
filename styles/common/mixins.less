@@ -1,3 +1,16 @@
+.animation (@name, @duration, @duration-count: infinite, @timing-function: ease) {
+  -webkit-animation: @name @duration @duration-count @timing-function;
+  -moz-animation: @name @duration @duration-count @timing-function;
+  -ms-animation: @name @duration @duration-count @timing-function;
+  -o-animation: @name @duration @duration-count @timing-function;
+}
+
+.background-size (@value) {
+  -webkit-background-size: @value;
+  -moz-background-size: @value;
+  background-size: @value;
+}
+
 .calcMarginL (@a, @operator, @b) {
   margin-left: -webkit-calc(@a @operator @b);
   margin-left: -moz-calc(@a @operator @b);
@@ -26,18 +39,10 @@
   background: linear-gradient(to bottom, @startColor 0%,@endColor 100%); // W3C
 }
 
-.transform(@string) {
-  -webkit-transform: @string;
-  -moz-transform: @string;
-  -ms-transform: @string;
-  -o-transform: @string;
-  transform: @string;
+.rotate(@deg) {
+  -webkit-transform: rotate(@deg);
+  -moz-transform: rotate(@deg);
+  -ms-transform: rotate(@deg);
+  -o-transform: rotate(@deg);
+  transform: rotate(@deg);
 }
-
-/*.keyframes (@name, @frames) {
-  @-webkit-keyframes @name {@frames}
-  @-moz-keyframes @name {@frames}
-  @-ms-keyframes @name {@frames}
-  @-o-keyframes @name {@frames}
-  @keyframes @name {@frames}
-}*/

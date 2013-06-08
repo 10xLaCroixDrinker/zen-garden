@@ -1,23 +1,41 @@
-@-webkit-keyframes spin {
-  from {-webkit-transform: rotate(0deg);}
-  to {-webkit-transform: rotate(360deg);}
+.spin {
+  from {.rotate(0deg);}
+  to {.rotate(360deg);}
 }
 
-@-webkit-keyframes rise {
+.rise {
   from {top: 100%;}
   to {top: 165px;}
 }
 
-@-webkit-keyframes rise-short {
+.rise-short {
   from {top: 100%;}
   to {top: 275px;}
 }
 
+@-webkit-keyframes spin {.spin;}
+@-moz-keyframes spin {.spin;}
+@-ms-keyframes spin {.spin;}
+@-o-keyframes spin {.spin;}
+@keyframes spin {.spin;}
+
+@-webkit-keyframes rise {.rise;}
+@-moz-keyframes rise {.rise;}
+@-ms-keyframes rise {.rise;}
+@-o-keyframes rise {.rise;}
+@keyframes rise {.rise;}
+
+@-webkit-keyframes rise-short {.rise-short;}
+@-moz-keyframes rise-short {.rise-short;}
+@-ms-keyframes rise-short {.rise-short;}
+@-o-keyframes rise-short {.rise-short;}
+@keyframes rise-short {.rise-short;}
+
 aside.sidebar {
   &:before{
-    -webkit-animation: spin 8s infinite linear;
+    .animation(spin, 8s, infinite, linear);
   }
   &:after {
-    -webkit-animation: rise 1.5s ease;
+    .animation(rise, 1.5s, 1);
   }
 }

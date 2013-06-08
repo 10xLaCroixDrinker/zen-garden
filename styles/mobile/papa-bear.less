@@ -31,9 +31,7 @@
       }
       &:after {
         background-position: center;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        background-size: contain;
+        .background-size(contain);
         float: right;
         margin: -330px 50px 0 0;
         min-width: 0;
@@ -47,9 +45,7 @@
       }
       &:after {
         background-position: center;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        background-size: contain;
+        .background-size(contain);
         margin-left: 50px;
         min-width: 0;
         width: 40%;
@@ -72,7 +68,7 @@
   aside.sidebar {
     &:before {top: 170px;}
     &:after {
-      -webkit-animation: rise-short 1.5s ease;
+      .animation(rise-short, 1.5s, 1);
       top: 275px;
     }
     .wrapper {
