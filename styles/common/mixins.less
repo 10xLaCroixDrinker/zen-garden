@@ -11,24 +11,6 @@
   background-size: @value;
 }
 
-.calcMarginL (@a, @operator, @b) {
-  margin-left: -webkit-calc(@a @operator @b);
-  margin-left: -moz-calc(@a @operator @b);
-  margin-left: calc(@a @operator @b);
-}
-
-.calcMarginR (@a, @operator, @b) {
-  margin-right: -webkit-calc(@a @operator @b);
-  margin-right: -moz-calc(@a @operator @b);
-  margin-right: calc(@a @operator @b);
-}
-
-.calcWidth (@a, @operator, @b) {
-  width: -webkit-calc(@a @operator @b);
-  width: -moz-calc(@a @operator @b);
-  width: calc(@a @operator @b);
-}
-
 .gradient (@startColor, @endColor) {
   background: @endColor; // Old browsers
   background: -moz-linear-gradient(top, @startColor 0%, @endColor 100%); // FF3.6+
