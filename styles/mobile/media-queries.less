@@ -2,12 +2,14 @@
   @import 'papa-bear';
 }
 
+// Ditch header lines
 @media (max-width: 890px) {
   .page-wrapper header h1 span {
     &:before, &:after {content: none;}
   }
 }
 
+// Adjust header
 @media (max-width: 750px) {
   .page-wrapper .intro {
     header {
@@ -23,10 +25,12 @@
   }
 }
 
+// "mobile" styles
 @media (max-width: 650px) {
   @import 'baby-bear';
 }
 
+// Adjust header
 @media (max-width: 500px) {
   .page-wrapper .intro header {
     h1 {
