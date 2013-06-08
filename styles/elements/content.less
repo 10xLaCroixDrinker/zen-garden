@@ -1,8 +1,9 @@
 .page-wrapper {
   .preamble {
-    .calcMarginL(50%, -, 520px);  
     clear: left;
     float: left;
+    left: 50%;
+    margin-left: -520px;
     max-width: 495px;
     position: relative;
     top: 301px;
@@ -29,49 +30,56 @@
       width: 50%;
     }
     .explanation {
-      .calcMarginR(50%, -, 520px);
-      float: right;
+      float: left;
+      margin-left: 1.5%;
       max-width: 495px;
       padding-bottom: 15px;
-      h3 {font-size: 26px;}
-    }
-    .participation {
-      background: @lightBlue;
-      border-top: 5px solid @blue;
-      padding-top: 15px;
-      width: 100%;
-      h3, p {
-        .calcMarginL(50%, -, 520px);
-        clear: left;
-        float: left;
-        max-width: 545px;
-      }
-      &:after {
-        background: url(../images/participation.png) 40px center no-repeat; // PNG Fallback
-        background: url('data:image/svg+xml;base64, @{participation}') 40px center no-repeat; // SVG Data URI
-        clear: right;
-        content: '';
-        display: block;
-        float: left;
-        height: 412px;
-        margin-top: -310px;
-        max-width: 495px;
-        min-width: 412px;
-        width: 100%;
-      }
-    }
-    .benefits {
-      background-color: @lightBlue;
-      border-bottom: 5px solid @blue;
-      margin-bottom: 25px;
-      padding: 150px 0 50px 0;
-      width: 100%;
-      h3, p {
-        .calcMarginR(50%, -, 520px);
-        clear:right;
-        float: right;
-        max-width: 545px;
-        width: 50%;
+      position: relative;
+      left: 50%;
+            h3 {font-size: 26px;}
+          }
+          .participation {
+            background: @lightBlue;
+            border-top: 5px solid @blue;
+            padding-top: 15px;
+            width: 100%;
+            h3, p {
+              clear: left;
+              float: left;
+              left: 50%;
+              margin-left: -520px;
+              max-width: 545px;
+              position: relative;
+            }
+            &:after {
+              background: url(../images/participation.png) 40px center no-repeat; // PNG Fallback
+              background: url('data:image/svg+xml;base64, @{participation}') 40px center no-repeat; // SVG Data URI
+              clear: right;
+              content: '';
+              display: block;
+              float: left;
+              height: 412px;
+              left: 50%;
+              margin-top: -310px;
+              max-width: 495px;
+              min-width: 412px;
+              position: relative;        
+              width: 100%;
+            }
+          }
+          .benefits {
+            background-color: @lightBlue;
+            border-bottom: 5px solid @blue;
+            margin-bottom: 25px;
+            padding: 150px 0 50px 0;
+            width: 100%;
+            h3, p {
+              clear: left;
+              float: left;
+              left: 50%;
+              max-width: 545px;
+              position: relative;
+              width: 50%;
       }
       &:before {
         border: 1px solid @red;
@@ -84,16 +92,17 @@
         width: 220px;
       }
       &:after {
-        .calcMarginL(50%, -, 520px);
         background: url(../images/benefits.png) 150px center no-repeat; // PNG Fallback
         background: url('data:image/svg+xml;base64, @{benefits}') 150px center no-repeat;  // SVG Data URI
         content: '';
         display: block;
         float: left;
         height: 312px;
-        margin-top: -90px;
+        left: 50%;
+        margin: -90px 0 0 -1050px;
         max-width: 495px;
         min-width: 312px;
+        position: relative;
         width: 100%;
       }
     }
@@ -109,19 +118,21 @@
       }
       p {
         float: left;
+        margin-top: 0;
+        max-width: 495px;
+        width: 47.5%;
         &:nth-child(-n+3) { // Selects first 3 elements
           clear: left;
-          margin-right: 35px;
+          margin-right: 5%;
         }
         &:nth-child(4) { // Selects 4th element
           position: absolute;
           right: 0;
         }
-        .calcWidth(50%, -, 17.5px);
-        margin-top: 0;
         &:last-child {
           font-size: 24px;
           margin-top: 40px;
+          max-width: none;
           padding-bottom: 20px;
           text-align: center;
           width: 100%;

@@ -2,18 +2,18 @@
   @import 'papa-bear';
 }
 
-// Resizing header lines
-  @media (max-width: 1000px) {.page-wrapper header h1 span {&:before, &:after {width: 100px;}}}
-  @media (max-width: 940px) {.page-wrapper header h1 span {&:before, &:after {width: 75px;}}}
-  @media (max-width: 890px) {.page-wrapper header h1 span {&:before, &:after {width: 50px;}}}
-  @media (max-width: 890px) {.page-wrapper header h1 span {&:before, &:after {content: none;}}}
+@media (max-width: 890px) {
+  .page-wrapper header h1 span {
+    &:before, &:after {content: none;}
+  }
+}
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .page-wrapper .intro {
     header {
       h1 {
         font-size: 60px;
-        height: 50px;
+        min-height: 50px;
         margin-top: 35px;
       }
       h2 {max-width: 455px;}
@@ -27,12 +27,13 @@
   @import 'baby-bear';
 }
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   .page-wrapper .intro header {
     h1 {
       font-size: 40px;
-      height: 40px;
-      margin-top: 25px;
+      min-height: 40px;
+      line-height: 1em;
+      margin: 15px 0 10px;
     }
     h2 {
       font-size: 16px;

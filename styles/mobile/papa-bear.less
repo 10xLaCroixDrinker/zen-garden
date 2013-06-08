@@ -15,51 +15,56 @@
     }
   }
   .preamble {
-    .calcWidth(50%, -, 75px);
-    margin-left: 50px;
+    left: auto;
+    margin: 0 2.5% 0 5%;
     top: 436px;
+    width: 42.5%;
   }
   .supporting {
     .explanation {
-      .calcWidth(50%, -, 75px);
-      margin-right: 50px;
+      margin: 0 5% 0 2.5%;
+      width: 42.5%;
     }
     .participation {
       h3, p {
-        .calcWidth(50%, -, 50px);
-        margin-left: 50px;
+        left: auto;
+        margin-left: 5%;
+        width: 47%;
       }
       &:after {
         background-position: center;
         .background-size(contain);
         float: right;
-        margin: -330px 50px 0 0;
+        margin: -330px 5% 0 0;
         min-width: 0;
+        position: static;
         width: 40%;
       }
     }
     .benefits {
       h3, p {
-        .calcWidth(50%, -, 50px);
-        margin-right: 50px;
+        margin-right: 5%;
+        width: 47%;
       }
       &:after {
         background-position: center;
         .background-size(contain);
-        margin-left: 50px;
+        clear: left;
+        margin: -230px 0 0 5%;
         min-width: 0;
+        position: static;
         width: 40%;
       }
     }
     .requirements {
-      .calcWidth(100%, -, 100px);
       left: auto;
       margin-left: 0;
-      padding: 0 50px;
+      padding: 0 5%;
+      width: 90%;
       p {
         &:nth-child(4) {
-          .calcWidth(50%, -, 65px);
-          right: 50px;
+          right: 5%;
+          width: 42.5%;
         }
         &:last-child span {width: 60%;}
       }
@@ -72,8 +77,8 @@
       top: 275px;
     }
     .wrapper {
-      .calcWidth(100%, -, 100px);
-      padding: 40px 50px 30px;
+      padding: 40px 5% 30px;
+      width: 90%;
     }
   }
 }

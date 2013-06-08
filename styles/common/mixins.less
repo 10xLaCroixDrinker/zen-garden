@@ -30,7 +30,7 @@
 }
 
 .gradient (@startColor, @endColor) {
-  background: @startColor; // Old browsers
+  background: @endColor; // Old browsers
   background: -moz-linear-gradient(top, @startColor 0%, @endColor 100%); // FF3.6+
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@startColor), color-stop(100%,@endColor)); // Chrome,Safari4+
   background: -webkit-linear-gradient(top, @startColor 0%,@endColor 100%); // Chrome10+,Safari5.1+

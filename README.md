@@ -6,6 +6,7 @@ Design by [@guitrasher](https://twitter.com/guitrasher)
 Development by [@jimmyking](https://twitter.com/jimmyking)
 
 To build: `lessc styles/all.less styles/all.css`
+(If you don't have LESS installed already: `npm install -g less`)
 
 Tested on:
 * IE 9 & 10
@@ -14,3 +15,4 @@ Tested on:
 * Safari 6
 * iOS 6 (iPhone, iPad & iPad Mini)
 * Android 4.x (Nexus 4 & Nexus 10)
+* MS Surface
