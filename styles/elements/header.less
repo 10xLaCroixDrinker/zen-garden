@@ -10,19 +10,18 @@ header {
     margin: 55px auto 0;
     max-width: 1040px;
     span {
+      display: block;
       &:before, &:after {
-      border: 1px solid @red;
-      content: '';
-      display: inline-block;
-      height: 0;
-      margin: 0 10px;
-      position: absolute;
-      vertical-align: 0.4em;
-      width: 130px;
+        border: 1px solid @red;
+        content: '';
+        display: inline-block;
+        height: 0;
+        margin: 0 10px;
+        vertical-align: 0.4em;
+        width: 130px;
       }
       &:before {
         float: left;
-        margin-left: -140px;
       }
       &:after {
         float: right;
