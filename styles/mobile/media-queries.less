@@ -2,13 +2,6 @@
   @import 'papa-bear';
 }
 
-// Ditch header lines
-@media (max-width: 890px) {
-  .page-wrapper header h1 span {
-    &:before, &:after {content: none;}
-  }
-}
-
 // Adjust header
 @media (max-width: 750px) {
   .page-wrapper .intro {
@@ -17,6 +10,7 @@
         font-size: 60px;
         min-height: 50px;
         margin-top: 35px;
+        &:after {content: none;}
       }
       h2 {max-width: 455px;}
     }

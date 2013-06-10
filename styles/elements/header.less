@@ -1,28 +1,28 @@
 header {
+  margin: 0 auto;
+  max-width: 1040px;
   position: relative;
   text-align: center;
   top: 0;
   width: 100%;
   z-index: 1;
   h1 {
+    border-top: 2px solid white;
     color: @darkBlue;
+    display: inline-block;
     min-height: 70px;
     margin: 55px auto 0;
-    max-width: 1040px;
-    &:before, &:after {
-      border: 1px solid @red;
-      content: '';
-      display: inline-block;
-      height: 0;
-      margin: 0 10px;
-      vertical-align: 0.4em;
-      width: 130px;
-    }
-    &:before {
-      float: left;
-    }
+    padding: 0 10px;
+    z-index: 2;
     &:after {
-      float: right;
+      background-color: @red;
+      content: '';
+      height: 2px;
+      left: 0;
+      margin-top: -2px;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
     }
   }
   h2 {
