@@ -464,6 +464,9 @@ header h1 {
   margin: 55px auto 0;
   max-width: 1040px;
 }
+header h1 span {
+  display: block;
+}
 header h1 span:before,
 header h1 span:after {
   border: 1px solid #dd3b2a;
@@ -471,13 +474,11 @@ header h1 span:after {
   display: inline-block;
   height: 0;
   margin: 0 10px;
-  position: absolute;
   vertical-align: 0.4em;
   width: 130px;
 }
 header h1 span:before {
   float: left;
-  margin-left: -140px;
 }
 header h1 span:after {
   float: right;
