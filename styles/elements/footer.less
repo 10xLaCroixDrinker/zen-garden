@@ -1,43 +1,43 @@
 aside.sidebar {
-  clear: both;
-  float: left;
-  display: block;
-  width: 100%;
   background: @linkColor;
   border-top: 5px solid @lightBlue;
+  clear: both;
+  display: block;
+  float: left;
+  margin-bottom: -5px;
+  width: 100%;
   &:before {
-    content: '';
     background: url('../images/starburst.png') center top no-repeat; // PNG Fallback
     background: url('data:image/svg+xml;base64, @{starburst}') center top no-repeat; // SVG Data URI
-    width: 923px;
+    content: '';
     height: 921px;
-    position: fixed;
-    top: 60px;
     left: 50%;
     margin-left: -461.5px;
+    position: fixed;
+    top: 60px;
+    width: 923px;
   }
   &:after {
-    content: '';
     background: url('../images/robot.png') center top no-repeat; // PNG Fallback
     background: url('data:image/svg+xml;base64, @{robot}') center top no-repeat; // SVG Data URI
+    content: '';
     height: 949px;
-    width: 429px;
-    position: fixed;
-    top: 165px;
     left: 50%;
     margin-left: -215px;
+    position: fixed;
+    top: 165px;
+    width: 429px;
     z-index: 1;
   }
   .wrapper {
     background: @linkColor;
     border-top: 5px solid @lightBlue;
-    z-index: 2;
+    margin: -5px auto 0;
+    max-width: 1040px;
+    padding: 40px 0 30px 0;
     position: relative;
     width: 100%;
-    max-width: 1040px;
-    top: -5px;
-    margin: 0 auto;
-    padding: 40px 0 30px 0;
+    z-index: 2;
     h3 {
       color: @darkBlue;
       font-size: 24px;
@@ -52,28 +52,26 @@ aside.sidebar {
       padding: 0;
     }
     .design-selection {
-      width: 50%;
-      float: left;
       border-right: 2px solid @lightBlue;
+      float: left;
       margin-right: 40px;
       padding-bottom: 60px;
+      width: 50%;
     }
     .zen-resources {margin-top: 40px;}
   }
 }
 
 .page-wrapper .supporting > footer {
-  width: 100%;
   background: @darkBlue;
-  position: absolute;
-  bottom: -449px;
-  height: 65px;
   font-size: 22px;
+  height: 65px;
   text-align: center;
+  width: 100%;
   a {
     color: @lightBlue;
-    vertical-align: -1em;
     margin-right: 25px;
+    vertical-align: -1em;
     &:last-child {margin-right: 0;}
   }
 }

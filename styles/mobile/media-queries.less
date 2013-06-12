@@ -10,7 +10,6 @@
         font-size: 60px;
         min-height: 50px;
         margin-top: 35px;
-        &:after {content: none;}
       }
       h2 {max-width: 455px;}
     }
@@ -28,10 +27,12 @@
 @media (max-width: 500px) {
   .page-wrapper .intro header {
     h1 {
+      background: white;
       font-size: 40px;
-      min-height: 40px;
       line-height: 1em;
       margin: 15px 0 10px;
+      min-height: 40px;
+      &:after {margin-top: 18px;}
     }
     h2 {
       font-size: 16px;
