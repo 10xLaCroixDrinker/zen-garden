@@ -38,6 +38,16 @@ aside.sidebar {
     position: relative;
     width: 100%;
     z-index: 2;
+    &:after { // Clearfix
+      clear: both;
+      content: " ";
+      display: block;
+      font-size: 0;
+      height: 0;
+      line-height: 0;
+      visibility: hidden;
+      width: 0;
+    }
     h3 {
       color: @darkBlue;
       font-size: 24px;
@@ -50,13 +60,17 @@ aside.sidebar {
     ul {
       list-style: none;
       padding: 0;
+      li {
+        margin-bottom: 12px;
+        &:last-child {margin-bottom: 0;}
+      }
     }
     .design-selection {
       border-right: 2px solid @lightBlue;
       float: left;
       margin-right: 40px;
-      padding-bottom: 60px;
       width: 50%;
+      .design-name {display: block;}
     }
     .zen-resources {margin-top: 40px;}
   }
