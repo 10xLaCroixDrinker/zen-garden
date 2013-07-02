@@ -1,87 +1,89 @@
-.page-wrapper {
-  .intro {
-    height: 700px;
-    .summary {
-      left: auto;
-      margin-top: 15px;
-      text-align: center;
-      top: auto;
-      p {
-        float: none;
-        margin: 0 auto 10px;
-        max-width: 300px;
-        width: 90%;
-      }
+.intro {
+  height: 700px;
+  .summary {
+    left: auto;
+    margin-top: 15px;
+    text-align: center;
+    top: auto;
+    p {
+      float: none;
+      margin: 0 auto 10px;
+      max-width: 300px;
+      width: 90%;
     }
   }
-  .preamble {
+}
+
+.preamble {
+  left: auto;
+  margin: 0 2.5% 0 5%;
+  top: 413px;
+  width: 42.5%;
+}
+
+.explanation {
+  margin: 0 5% 0 2.5%;
+  width: 42.5%;
+}
+
+.participation {
+  h3, p {
     left: auto;
-    margin: 0 2.5% 0 5%;
-    top: 413px;
-    width: 42.5%;
+    margin-left: 5%;
+    width: 47%;
   }
-  .supporting {
-    .explanation {
-      margin: 0 5% 0 2.5%;
+  &:after {
+    background-position: center;
+    .background-size(contain);
+    float: right;
+    margin: -330px 5% 0 0;
+    min-width: 0;
+    position: static;
+    width: 40%;
+  }
+}
+
+.benefits {
+  h3, p {
+    margin-right: 5%;
+    width: 47%;
+  }
+  &:after {
+    background-position: center;
+    .background-size(contain);
+    clear: left;
+    margin: -230px 0 0 5%;
+    min-width: 0;
+    position: static;
+    width: 40%;
+  }
+}
+
+.requirements {
+  left: auto;
+  margin-left: 0;
+  padding: 0 5%;
+  width: 90%;
+  p {
+    &:nth-child(4) {
+      right: 5%;
       width: 42.5%;
     }
-    .participation {
-      h3, p {
-        left: auto;
-        margin-left: 5%;
-        width: 47%;
-      }
-      &:after {
-        background-position: center;
-        .background-size(contain);
-        float: right;
-        margin: -330px 5% 0 0;
-        min-width: 0;
-        position: static;
-        width: 40%;
-      }
-    }
-    .benefits {
-      h3, p {
-        margin-right: 5%;
-        width: 47%;
-      }
-      &:after {
-        background-position: center;
-        .background-size(contain);
-        clear: left;
-        margin: -230px 0 0 5%;
-        min-width: 0;
-        position: static;
-        width: 40%;
-      }
-    }
-    .requirements {
-      left: auto;
-      margin-left: 0;
-      padding: 0 5%;
-      width: 90%;
-      p {
-        &:nth-child(4) {
-          right: 5%;
-          width: 42.5%;
-        }
-        &:last-child {
-          padding: 0 20% 20px;
-          width: 60%;
-        }
-      }
+    &:last-child {
+      padding: 0 20% 20px;
+      width: 60%;
     }
   }
-  aside.sidebar {
-    &:before {top: 170px;}
-    &:after {
-      .animation(rise-short, 1.5s, 1);
-      top: 275px;
-    }
-    .wrapper {
-      padding: 40px 5% 30px;
-      width: 90%;
-    }
+}
+
+aside {
+  &:before {top: 170px;}
+  &:after {
+    .animation(rise-short, 1.5s, 1);
+    top: 275px;
+  }
+  .wrapper {
+    padding: 40px 5% 30px;
+    width: 90%;
   }
 }
