@@ -3,7 +3,7 @@
 ## A submission from [meltmedia](http://meltmedia.com) for the [CSS Zen Garden's 10th Anniversary](http://mezzoblue.com/archives/2013/05/07/10_years/)
 
 Design by [@guitrasher](https://twitter.com/guitrasher)  
-Development by [@jimmyking](https://twitter.com/jimmyking)
+Development by [@10xLaCroixDrnkr](https://twitter.com/10xLaCroixDrnkr)
 
 To build: `lessc styles/all.less styles/all.css`
 (If you don't have LESS installed already: `npm install -g less`)
